@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:counter_7/budget_info.dart';
+import 'package:counter_7/budget_data.dart';
 
 void main() {
   runApp(const MyApp());
@@ -104,6 +106,33 @@ class _MyHomePageState extends State<MyHomePage> {
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
+      ),
+      drawer: Drawer(
+        child: Column(
+          children: [
+            ListTile(
+              title: const Text('counter_7'),
+              onTap: (){
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => MyHomePage(title: 'Flutter Demo Home Page')),
+                );
+              },
+            ),
+            ListTile(
+              title: const Text('Add Budget Info'),
+              onTap: (){
+                Navigator.pushReplacement(context, MaterialPageRoute(builder:(context) => const BudgetInfoPage()),
+                );
+              },
+            ),
+            ListTile(
+              title: const Text('Budget Data'),
+              onTap: (){
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const BudgetDataPage()),
+                );
+              },
+            ),
+          ],
+        ),
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
