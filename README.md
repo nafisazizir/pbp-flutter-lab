@@ -74,3 +74,24 @@ Final field or variable initialization is required. The final variable's value c
         ),
       )
 ```
+
+# Assignment 8 - Budget
+
+## Explain the difference between Navigator.push and Navigator.pushReplacement
+To switch to a new route, Navigator.push will push the new route onto the stack. This new route can be created yourself or by using MaterialPageRoute. Navigator.pushReplacement will replace the stack that best fits the given context by pushing a new route and popping the previous route immediately when the new route finishes animating.
+
+## List all the widgets you used in this project and explain their functions
+The widgets that I use in this project are: Scaffold – Implements the basic material design for the visual structure of the AppBar layout – Creates a bar at the top of the screen. Text - To write something on the screen. Container – to hold widgets. Center – to focus the existing widget so that it is in the center of the screen. TextButton - Creates a text button. DropdownButtonHideUnderline - To create dropdown button, but no underline DropdownMenuItem - Create dropdown menu OutlineInputBorder - set border
+
+## Name the types of events that exist in Flutter (example: onPressed)
+onPressed, Gesture
+
+## Explain how the Navigator works in "switching" pages of a Flutter application
+Navigator is a widget that manages page route changes using the stack principle. If there are 2 routes, if we want to navigate to the second route we can use navigator.push, if we want to return to the first route we can use Navigator.pop
+
+## How to implement
+1. Make two files for each form and show_data files
+2. Make drawer in each files
+3. Import each files into another
+4. In budget_info.dart file, make form to save and store the data that will be input by user
+5. In budget_data.dart, will be showing the data that has been inputted by the user
