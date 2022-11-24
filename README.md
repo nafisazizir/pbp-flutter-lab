@@ -95,3 +95,20 @@ Navigator is a widget that manages page route changes using the stack principle.
 3. Import each files into another
 4. In budget_info.dart file, make form to save and store the data that will be input by user
 5. In budget_data.dart, will be showing the data that has been inputted by the user
+
+# Assignment 9 - My Watchlist
+
+## Can we retrieve JSON data without creating a model first? If yes, is it better than creating a model before retrieving JSON data?
+Yes, we can. We can use jsonDecode() to retrieve JSON without creating a model, but it is rarely used because the vulnerability of errors if we do'nt know the datatype. So, it will be much better to create the model first, then retrieve the JSON
+
+## List the widgets that you used in this project and explain their functions.
+Future Builder : to support the asynch proccess
+
+## Explain the mechanism of retrieving data from json so it can be shown in Flutter.
+After creating the model, the JSON retrieved from http.get then it will be decoded and converted into class objects as we defined earlier
+
+## Explain how you implemented the checklist above.
+1. Make new file and refactor
+2. Make the model
+3. Parse the JSON
+4. Create the display page and details
