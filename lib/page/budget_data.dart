@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:counter_7/main.dart';
-import 'package:counter_7/budget_info.dart';
+import 'package:counter_7/page/budget_info.dart';
+import 'package:counter_7/page/mywatchlist_page.dart';
 
 class BudgetDataPage extends StatefulWidget {
   const BudgetDataPage({super.key});
@@ -48,6 +49,13 @@ class _BudgetDataPageState extends State<BudgetDataPage> {
               title: const Text('Budget Data'),
               onTap: (){
                 Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const BudgetDataPage()),
+                );
+              },
+            ),
+            ListTile(
+              title: const Text('My Watchlist'),
+              onTap: (){
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const MyWatchlistPage()),
                 );
               },
             ),
